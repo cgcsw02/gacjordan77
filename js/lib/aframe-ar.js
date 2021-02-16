@@ -3297,7 +3297,7 @@ THREEx.ArVideoInWebgl = function (videoTexture) {
 	// arToolkitSource.domElement.style.visibility = 'hidden'
 
 	// TODO extract the fov from the projectionMatrix
-	camera.fov = 60
+	// camera.fov = 60
 	this.update = function (camera) {
 		camera.updateMatrixWorld(true)
 
@@ -3320,7 +3320,7 @@ THREEx.ArVideoInWebgl = function (videoTexture) {
 
 		var aspect = elementWidth / elementHeight
 
-		// camera.fov = fov
+		camera.fov = fov
 		// if( vrDisplay.isPresenting ){
 		// 	fov *= 2
 		// 	aspect *= 2
